@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.work.messaging.mapper.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.work.messaging.entity.pojo.SysUser">
+        <id column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="nick_name" property="nickName" />
+        <result column="icon" property="icon" />
+        <result column="password" property="password" />
+        <result column="create_time" property="createTime" />
+        <result column="create_id" property="createId" />
+        <result column="update_time" property="updateTime" />
+        <result column="update_id" property="updateId" />
+        <result column="tel" property="tel" />
+        <result column="email" property="email" />
+        <result column="locked" property="locked" />
+        <result column="is_admin" property="isAdmin" />
+        <result column="agent_id" property="agentId" />
+        <result column="remarks" property="remarks" />
+        <result column="v1" property="v1" />
+        <result column="v2" property="v2" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, username, nick_name, icon, password, create_time, create_id, update_time, update_id, tel, email, locked, is_admin, agent_id, remarks, v1, v2
+    </sql>
+
+</mapper>
